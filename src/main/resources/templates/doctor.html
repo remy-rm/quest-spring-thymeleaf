@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>Header TODO</header>
+<header th:replace="index :: top"></header>
 <section>
-    <h1>Welcome $doctorname</h1>
-    <h3>Your number is $doctornumber</h3>
+    <h1 th:text="|Welcome ${doctor.name}|">Welcome Jhon Smith</h1>
+    <h3 th:text="|Your number is ${doctor.number}|">Your number is 0</h3>
 </section>
-<footer>Footer TODO</footer>
+<footer th:replace="index :: bottom "></footer>
 </body>
 </html>
